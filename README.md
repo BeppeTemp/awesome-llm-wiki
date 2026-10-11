@@ -39,9 +39,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Academic Courses and Lectures](#academic-courses-and-lectures)
 - [Videos](#videos)
 - [Podcasts](#podcasts)
-  - [Build With AI](#build-with-ai)
-  - [Microsoft Cloud IT Pro Podcast](#microsoft-cloud-it-pro-podcast)
-  - [Working Code Podcast](#working-code-podcast)
 - [Forums and Discussions](#forums-and-discussions)
 
 ## Foundations
@@ -439,10 +436,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [OpenKnowledge](https://github.com/inkeep/open-knowledge) ([Website](https://openknowledge.ai/)) - An open-source, local-first IDE and markdown editor designed explicitly for co-authoring long-term memory vaults with AI agents. It features a dual-observer CRDT architecture for real-time, lossless visual text synchronization alongside automated agent updates, packages native Model Context Protocol (MCP) servers to expose folder structures to external assistants, and leverages git-backed version control to ensure complete data privacy and sovereignty.
 - [Row-Bot](https://github.com/siddsachar/row-bot) - A local-first desktop AI assistant and workbench that centers its persistent memory layer around an integrated Personal Knowledge Graph. It features background "dream cycle" compilation routines that automatically extract, deduplicate, and update local knowledge files, offering native, Obsidian-compatible wiki vault exports alongside tool orchestration hooks.
 - [Second Brain (PieroSierra)](https://github.com/PieroSierra/SecondBrain) - A local-first personal knowledge base and desktop application wrapper that automatically processes notes into a three-tier markdown structure (raw/, wiki/, outputs/). Exposes custom skills for Claude Code, OpenAI Codex, and OpenCode alongside a downloadable macOS dashboard client.
-- [SiderMem](https://www.sidermem.com/) ([Chrome Web Store](https://chromewebstore.google.com/detail/sidermem/cmknanohkhlpjfofleajpmjljpepbgeo) / [npm](https://www.npmjs.com/package/sidermem-cli)) - A personal
-  knowledge base Chrome extension and companion CLI that captures web pages, notes, files, and multi-model AI chats.
-  Automatically extracts entities and concepts to compile a connected personal wiki with interactive graph views,
-  Obsidian-compatible Markdown export with wikilinks, and grounded conversational Q&A.
 - [Silica (kiycoh)](https://silica-agent.vercel.app/) ([GitHub](https://github.com/kiycoh/silica-agent)) - A local-first transactional agent and web GUI workbench for Karpathy-style LLM Wikis and Google's Open Knowledge Format (OKF v0.2). Implements an FSM write path with post-write verification gates and rollback mechanisms, atomic graph-safe link redirects, zero-trust ingress staging, and published abstention benchmarks on LoCoMo.
 - [Sofie Wiki](https://sofie.wiki/) - A chat-driven AI knowledge base application that automatically writes, cross-links, and updates wiki pages from conversations, featuring local history and Model Context Protocol (MCP) integration.
 - [talirezun/the-curator](https://github.com/talirezun/the-curator) ([Companion Article](https://medium.com/@talirezun/the-second-brain-that-grows-smarter-and-lives-on-your-computer-59dd45031db4)) - A full-stack, locally-hosted knowledge curation application that automates the Karpathy LLM Wiki pattern via an accessible browser GUI. Features an automated Atomic Decomposition pipeline separating files into interconnected Entity, Concept, and Summary nodes, built-in Obsidian graph visualization setups, and an integrated private Model Context Protocol (MCP) server bridge to expose local vaults directly to external AI clients.
@@ -476,6 +469,10 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [LLM Wiki (Dom Leca)](https://github.com/domleca/llm-wiki) ([Forum Post](https://forum.obsidian.md/t/new-plugin-llm-wiki-turn-your-vault-into-a-queryable-knowledge-base-privately/113223)) - A native Obsidian community plugin implementing Karpathy's compilation pattern locally via Ollama (Qwen 2.5 + Nomic Embed), featuring real-time event-driven background extraction, multi-modal hybrid search, and persistent natural language chat interfaces.
 - [llm-knowledge-bases (rvk7895)](https://github.com/rvk7895/llm-knowledge-bases) - An open-source Claude Code plugin and skill suite that compiles raw multi-modal source documents (papers, YouTube transcripts, images, datasets) into an interlinked Obsidian wiki. Features three query depth levels (Quick, Standard, and Deep multi-agent research), artifact export for Marp slides and charts, and automated vault health linters.
 - [Matryca Plumber](https://github.com/MarcoPorcellato/matryca-plumber) - An enterprise-grade, local-first background AI maintenance daemon and native FastMCP server for Logseq graphs. Directly handles direct Markdown AST block mutations with integrated Optimistic Concurrency Control, featuring background dangling link healing, zero-LLM link rot lints, a local cockpit UI, and deep developer optimization for Claude Code.
+- [SiderMem](https://www.sidermem.com/) ([Chrome Web Store](https://chromewebstore.google.com/detail/sidermem/cmknanohkhlpjfofleajpmjljpepbgeo) / [npm](https://www.npmjs.com/package/sidermem-cli)) - A personal
+  knowledge base Chrome extension and companion CLI that captures web pages, notes, files, and multi-model AI chats.
+  Automatically extracts entities and concepts to compile a connected personal wiki with interactive graph views,
+  Obsidian-compatible Markdown export with wikilinks, and grounded conversational Q&A.
 - [twillm](https://github.com/Jermolene/twillm) - A TiddlyWiki-powered local knowledge management wrapper explicitly built around the Karpathy LLM Wiki pattern. It watches an Obsidian-compatible directory of flat-file Markdown nodes to dynamically compile live query filters and interactive dashboards, eliminating index file staleness across parallel human and AI agent editing loops.
 - [vault-operator (pssah4)](https://github.com/pssah4/vault-operator) ([Website](https://pssah4.github.io/vault-operator/)) - An agentic
   AI operating layer and Obsidian plugin that serves as a thinking partner. Reads vault notes, manages long-term
@@ -513,7 +510,15 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [llm-wiki (hellohejinyu)](https://github.com/hellohejinyu/llm-wiki) ([npm](https://www.npmjs.com/package/llm-wiki)) - A Node.js-based CLI personal wiki manager. Scaffolds directories into a structured Markdown wiki, processes raw files into interlinked pages using LLM patches, runs questions through a multi-step ReAct agent, and performs static and semantic linting checks (orphans, dead links, contradictions) with automated stub creation.
 - [LLM-Wiki (NiharShrotri)](https://github.com/NiharShrotri/llm-wiki) - A Python-based CLI knowledge compiler and local web server implementing the Karpathy LLM Wiki pattern on Ollama (Qwen3-14B). Features automated structure ingestion, hybrid text retrieval (BM25 + vectors + reranking via QMD), a streaming Web UI chat interface, and a D3 force-directed knowledge graph visualization.
 - [llm-wiki-compiler (Atomic Memory)](https://github.com/atomicmemory/llm-wiki-compiler) - A TypeScript CLI tool and MCP server that compiles raw text into structured markdown wikis, featuring paragraph-level source provenance tracking, multi-provider model routing, and a rule-based workspace linter.
+- [llm-wiki-starter (eleven-net-cn)](https://github.com/eleven-net-cn/llm-wiki-starter) - A one-command CLI scaffolding
+  tool and agent skill implementing the Karpathy LLM Wiki pattern. Generates a three-layer directory structure
+  (raw/, wiki/, templates/), pre-configures AGENTS.md and CLAUDE.md guidelines, auto-configures 17 essential Obsidian
+  plugins and themes, and installs companion agent skills.
 - [llmwiki (Lucas Astorian)](https://github.com/lucasastorian/llmwiki) - An open-source Python engine and local web dashboard that indexes directories into a local SQLite repository, serving a specialized MCP adapter to automate Claude-driven wiki compilation and citation tracking.
+- [memwiki (hereisSwapnil)](https://github.com/hereisSwapnil/memwiki) ([npm](https://www.npmjs.com/package/memwiki)) - A
+  zero-dependency CLI scaffolding tool and persistent project memory protocol for AI agents (Claude Code, Cursor,
+  Copilot). Initializes a structured .memory/ directory with raw storage, a hot context cache (hot.md), append-only
+  changelogs (log.md), architecture decision records, and multi-agent root hooks.
 - [my-wiki](https://pypi.org/project/my-wiki/) - A local-first, Git-synced repository management utility for terminal AI workflows. It enforces a strict, predictable `wiki/` flat-file directory contract on the local filesystem, optimizing how external tools like Claude Code and Cursor discover, parse, and commit markdown knowledge files without database overhead or proprietary lock-in.
 - [obsidian-llm-wiki-local (kytmanov)](https://github.com/kytmanov/obsidian-llm-wiki-local) - An open-source, 100% local
   CLI compiler (succeeded by Synto) that parses Markdown notes using Ollama to extract entities and automatically
@@ -758,11 +763,6 @@ Inspired by a paradigm shift in software development engineering, this architect
   template implementing the LLM Wiki pattern. Pre-configures instruction files supporting both GitHub Copilot
   (.github/prompts/) and Claude Code (.claude/system_prompt.md) to manage ingestion and querying natively without
   vector databases or custom Python environments.
-- [llm-wiki-starter (eleven-net-cn)](https://github.com/eleven-net-cn/llm-wiki-starter) - A one-command CLI scaffolding tool and agent skill implementing the Karpathy LLM Wiki pattern. Generates a three-layer directory structure (raw/, wiki/, templates/), pre-configures AGENTS.md and CLAUDE.md guidelines, auto-configures 17 essential Obsidian plugins and themes, and installs companion agent skills.
-- [memwiki (hereisSwapnil)](https://github.com/hereisSwapnil/memwiki) ([npm](https://www.npmjs.com/package/memwiki)) - A zero-dependency CLI
-  scaffolding tool and persistent project memory protocol for AI agents (Claude Code, Cursor, Copilot). Initializes
-  a structured .memory/ directory with raw storage, a hot context cache (hot.md), append-only changelogs (log.md),
-  architecture decision records, and multi-agent root hooks.
 - [obsidian-memory-for-ai (jrcruciani)](https://github.com/jrcruciani/obsidian-memory-for-ai) - An open-source specification and reference vault implementing Transactional Atomic Markdown Memory for Obsidian. Follows a "one fact, one file" architecture, featuring Git-native multi-op transactions with idempotency, a formal proposal/review lifecycle, deterministic lexical/graph indexes, and a schema validation engine.
 - [Omnia Vault (gavishap)](https://github.com/gavishap/omnia-vault) - An open-source, all-in-one project brain and
   Obsidian vault template for Claude Code and Codex. Combines an agent-maintained LLM wiki with code knowledge graphs
@@ -908,18 +908,23 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Audio-first breakdowns, developer interviews, and strategic discussions exploring the design, implementation, and everyday use of LLM Wiki architectures.*
 
-### Build With AI
-
-- [Episode 156: Build Karpathy's Second Brain With Obsidian + Claude Code](https://share.transistor.fm/s/d0fe7c2a) - A podcast episode featuring Nicholas Spisak walking through a live, 20-minute setup of an Obsidian second brain using Claude Code. Covers directory structures (raw, wiki, sessions), the automatic session transcript index, and setting up automated ingestion scripts.
-- [Episode 163: I Built the ULTIMATE AI Second Brain (Karpathy's LLM Wiki Setup Guide)](https://share.transistor.fm/s/3e92bab2) - A solo podcast episode outlining the deployment of an Obsidian-compatible second brain using Hermes and its native LLM Wiki skill. Breaks down the three-layer knowledge base layout (raw, wiki, schema), VPS deployment on Hostinger, Telegram bot connection, and using the Markdownload Chrome extension to feed sources.
-
-### Microsoft Cloud IT Pro Podcast
-
-- [Episode 429: Getting started with LLM Wikis](https://www.msclouditpropodcast.com/episode429/) - An operational teardown of the LLM Wiki architecture tailored for enterprise environments. Explores how to wire up Obsidian Web Clipper and automated RSS monitors to create active collection channels, utilizes Copilot Cowork background loops to handle daily inbox synthesis, and provides an analysis of the compliance risks of decoupling text assets from corporate Data Loss Prevention (DLP) and sensitivity governance.
-
-### Working Code Podcast
-
-- [Episode 260: Reinventing the Wiki](https://workingcode.dev/episodes/260-reinventing-the-wiki/) - A discussion analyzing the utility of personal LLM Wikis when models already ingest the web. Covers patterns for co-maintaining markdown vaults with agents, running private offline diaries with local models (Qwen), and compiling product Q&A/support tickets into custom wikis.
+- [Build With AI: Episode 156 - Build Karpathy's Second Brain With Obsidian + Claude Code](https://share.transistor.fm/s/d0fe7c2a) - A
+  podcast episode featuring Nicholas Spisak walking through a live, 20-minute setup of an Obsidian second brain
+  using Claude Code. Covers directory structures (raw, wiki, sessions), the automatic session transcript index,
+  and setting up automated ingestion scripts.
+- [Build With AI: Episode 163 - I Built the ULTIMATE AI Second Brain (Karpathy's LLM Wiki Setup Guide)](https://share.transistor.fm/s/3e92bab2) - A
+  solo podcast episode outlining the deployment of an Obsidian-compatible second brain using Hermes and its native
+  LLM Wiki skill. Breaks down the three-layer knowledge base layout (raw, wiki, schema), VPS deployment on Hostinger,
+  Telegram bot connection, and using the Markdownload Chrome extension to feed sources.
+- [Microsoft Cloud IT Pro Podcast: Episode 429 - Getting started with LLM Wikis](https://www.msclouditpropodcast.com/episode429/) - An
+  operational teardown of the LLM Wiki architecture tailored for enterprise environments. Explores how to wire up
+  Obsidian Web Clipper and automated RSS monitors to create active collection channels, utilizes Copilot Cowork
+  background loops to handle daily inbox synthesis, and provides an analysis of the compliance risks of decoupling
+  text assets from corporate Data Loss Prevention (DLP) and sensitivity governance.
+- [Working Code Podcast: Episode 260 - Reinventing the Wiki](https://workingcode.dev/episodes/260-reinventing-the-wiki/) - A
+  discussion analyzing the utility of personal LLM Wikis when models already ingest the web. Covers patterns for
+  co-maintaining markdown vaults with agents, running private offline diaries with local models (Qwen), and
+  compiling product Q&A/support tickets into custom wikis.
 
 ## Forums and Discussions
 
