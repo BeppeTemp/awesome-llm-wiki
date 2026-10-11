@@ -417,6 +417,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   cockpit and agentic shell for managing isolated LLM-wiki workspaces. Combines a local web console (browsable wiki,
   dependency graphs, and grounded chat) with a terminal UI (donna shell), multi-workspace service isolation,
   approval-gated capability dispatching, and Model Context Protocol (MCP) tool routing.
+- [LLMWikiNG (ZeroDot1)](https://github.com/ZeroDot1/LLMWikiNG) - An open-source, local-first wiki platform and CLI
+  (`wiki.sh`) implementing Karpathy's LLM Wiki pattern and Open Knowledge Format (OKF v0.2). Features a FastAPI web
+  interface with a dual-mode editor, interactive canvas knowledge graph, SQLite Matrix FTS5 and BM25 search, automated
+  file watcher, multi-wiki tenancy, and a native Model Context Protocol (MCP) server for local and remote agents.
 - [localmd](https://localmd.app/) ([GitHub](https://github.com/whitefoxx/localmd)) - An open-source, local-first web
   application and agentic workbench operating directly on local folders via the File System Access API. Features an
   integrated agent that compiles and edits Markdown wiki notes with `[[wikilinks]]`, force-directed graph visualization,
