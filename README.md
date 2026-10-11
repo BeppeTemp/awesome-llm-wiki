@@ -35,6 +35,7 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Agent Skills and System Rules](#agent-skills-and-system-rules)
   - [Starter Templates and Boilerplates](#starter-templates-and-boilerplates)
 - [Live Implementations and Reference Vaults](#live-implementations-and-reference-vaults)
+- [Evaluations and Benchmarks](#evaluations-and-benchmarks)
 - [Research and Papers](#research-and-papers)
 - [Academic Courses and Lectures](#academic-courses-and-lectures)
 - [Videos](#videos)
@@ -82,10 +83,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [Commonplace](https://zby.github.io/commonplace/) - A technical framework establishing the theory of deploy-time learning for bounded AI observers, detailing semantic distillation operations, and providing automated CLI workspace management skills.
 - [Compounding Knowledge with LLMs: Karpathy's Wiki Pattern in Action](https://pub.towardsai.net/compounding-knowledge-with-llms-karpathys-wiki-pattern-in-action-d01db84d5b8b) - An architectural analysis connecting Andrej Karpathy's LLM Wiki pattern to Vannevar Bush's historical vision of the Memex. Discusses how LLMs resolve the bottleneck of active knowledge maintenance, detailing layout models, indexing processes, and scalable retrieval strategies for multi-agent environments.
 - [Create Your AI Brain Today](https://saranfn.substack.com/p/create-your-ai-brain-today) - The final part of a structural context trilogy pinpointing why knowledge management setups fail at the content layer. Focuses on content architecture optimization, detailing how to engineer high-signal markdown nodes, construct type-safe frontmatter blocks for explicit entity tracking, and implement strict data compression filters to protect agent context windows from token bloat.
-- [Evaluating OpenWiki with WikiBench (LangChain Blog)](https://www.langchain.com/blog/evaluating-openwiki-with-wikibench) - An evaluation
-  overview introducing WikiBench, a benchmark running inside the Harbor framework to measure wiki usefulness for
-  agents. Demonstrates that pairing a generated wiki with codebase access yields higher task correctness and lower
-  token costs than querying raw source code alone.
 - [Give Your AI Unlimited Updated Context](https://saranfn.substack.com/p/give-your-ai-unlimited-updated-context) - An operational architecture guide exploring decoupled, portable text vaults. Outlines the strategic benefits of maintaining plain text markdown knowledge graphs over proprietary, model-siloed memories, detailing how to utilize root configuration files (`CLAUDE.md`) and automated background agent loops to keep cross-functional context updated natively.
 - [Inside the LLM Wiki Movement: Build Knowledge That Won't Betray You (Allen on AFFiNE Blog)](https://affine.pro/blog/llm-wiki) - A deep conceptual primer examining the LLM Wiki movement, contrasting the four core architectures (single-file, multi-file vault, code-based, and RAG-augmented), discussing hallucination mitigation via confidence tagging, and reviewing platform trade-offs.
 - [Introducing OpenWiki Brains, general-purpose wiki memory for agents (LangChain Blog)](https://www.langchain.com/blog/introducing-openwiki-brains-general-purpose-wiki-memory-for-agents) - The official announcement of OpenWiki Brains, detailing how agents use flat-file local wikis as proactive long-term memory.
@@ -137,10 +134,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 
 *Deep technical comparisons, comparative benchmarks, and evaluations of compiled memory systems against standard vector RAG pipelines.*
 
-- [Agentic Memory Index (Verging Labs)](https://verginglabs.com/) - An independent benchmark and comparative evaluation
-  suite testing 12 agent memory architectures (including Karpathy Wiki, GBrain, Cognee, and Mem0) across 56 working
-  sessions. Evaluates direct recall, cross-conversation synthesis, temporal reasoning, conflicting facts, and erasure,
-  measuring the accuracy, answer speed, and token cost trade-offs of compiled markdown vaults against vector memory.
 - [Andrej Karpathy Killed RAG. Or Did He? The LLM Wiki Pattern (Mandar Karhade)](https://pub.towardsai.net/andrej-karpathy-killed-rag-or-did-he-the-llm-wiki-pattern-7824d876e790) - An architectural analysis comparing traditional vector RAG pipelines against the compiled, static LLM Wiki pattern.
 - [Better Models Won’t Save Your Agent (Pinecone Blog)](https://www.pinecone.io/blog/introducing-nexus-knowledge-engine/) - A technical analysis on why vector search loops fail for agents, advocating for a pre-compiled context engineering layer.
 - [Beyond RAG: How Andrej Karpathy's LLM Wiki Pattern Builds Knowledge That Actually Compounds (Plaban Nayak in Level Up Coding)](https://levelup.gitconnected.com/beyond-rag-how-andrej-karpathys-llm-wiki-pattern-builds-knowledge-that-actually-compounds-31a08528665e) - A conceptual breakdown of the compilation loop model in LLM Wikis. Explains why stateless RAG pipelines fail to accumulate learning over time, comparing vector search to an "amnesic assistant" and detailing the three-layer layout (raw, wiki, schema) required to support self-maintaining agent knowledge bases.
@@ -318,10 +311,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [The AI Knowledge Layer: 127 Pages, Zero Vector Databases, and What I Got Wrong (Sebastian Kehle on Webvise)](https://www.webvise.io/blog/ai-knowledge-layer-guide) - A production retrospective and practical guide detailing the operation of a 127-page LLM knowledge layer without vector databases. Outlines real-world operating numbers, architectural lessons across the three-layer setup, common failure modes in agent maintenance, and setup blueprints for business research and project workflows.
 - [The Karpathy/Wyndo Wiki: How I Built a Knowledge Base That Maintains Itself (Lee Shand on Wired Differently Substack)](https://shaggyrs6.substack.com/p/the-karpathywyndo-wiki-how-i-built) - A personal case study detailing the construction of a self-maintaining Obsidian wiki using Claude Code, Readwise sync, and a custom skill toolkit, exploring cold-start sparse connections, import command challenges, and LLM-tagging behaviors.
 - [The LLM Wiki at 490 Pages: What 3 Months of Agent-Maintained Knowledge Actually Takes (Sebastian Kehle on Webvise)](https://www.webvise.io/blog/llm-wiki-3-month-report) - A comprehensive 3-month operations report detailing the maintenance of a 490-page, 880-commit LLM Wiki in Obsidian. Explores six discrete agent operations (ingest, update, query, lint, enrich, reorganize), deterministic 20-check pre-commit lint gates, split human-agent ownership models, and healthy page-count consolidation passes.
-- [The LLM Wiki Got a Spec Before It Got a Benchmark (Alden DoRosario)](https://adorosario.github.io/llm-wiki/) ([GitHub](https://github.com/adorosario/okf-model-bakeoff)) - An empirical benchmark
-  evaluating 14 LLMs generating Open Knowledge Format (OKF) markdown documents across a four-stage compilation loop.
-  Uses a cross-vendor judge and per-call cost ledgers to analyze price-performance plateaus, token efficiency, and
-  generator failure modes like empty-body artefacts and metadata schema crashes.
 - [The LLM Wiki: 3 Months of Letting Agents Run My Second Brain (Sebastian Kehle on X)](https://x.com/sebastiankehle/status/2079452931489702369) - A detailed production review of an LLM Wiki operating over a 450-page Obsidian vault, outlining folder structures, pre-commit linter checks, and split-ownership boundaries.
 - [The Schema Is the Product (Part 2 of 4) (Brett Washington on Medium)](https://medium.com/@skooliano/the-schema-is-the-product-484aae1696f5) - Part 2 of a 4-part series detailing why the system instructions and formatting rules (the schema) represent the true value of an agentic wiki, explaining how to write rules that force agents to capture raw facts, structure page layouts, and log contradictions.
 - [The Wiki Is What Makes Local Models Usable (Part 4 of 4) (Brett Washington on Medium)](https://medium.com/@skooliano/the-wiki-is-what-makes-local-models-usable-64d0f69c960c) - Part 4 of a 4-part series exploring how an external, flat-file Markdown wiki acts as a load-bearing memory layer that compensates for the small context windows of local on-device models, enabling private and cost-efficient knowledge work.
@@ -371,7 +360,6 @@ Inspired by a paradigm shift in software development engineering, this architect
 - [llmwiki-harness (chancelu)](https://github.com/chancelu/llmwiki-harness) ([PyPI](https://pypi.org/project/llmwiki-harness/)) - A context-memory
   harness for AI agents. Bridges context windows (acting as RAM) and local Markdown wikis (acting as disk) to support
   structured, long-term memory retrieval and visual mapping.
-- [memory-arena](https://pypi.org/project/memory-arena/) - An open-source benchmarking suite and evaluation harness designed to test long-term agent memory strategies across interdependent, multi-session tasks. It establishes a standardized empirical testing framework comparing classical vector storage, graph-based abstractions, and flat-file architectures like the Karpathy LLM Wiki pattern—measuring recall accuracy, context degradation, and token overhead.
 - [obsidian-wiki](https://github.com/Ar9av/obsidian-wiki) - A pip-installable Python framework that transforms any local Obsidian vault into a cross-agent knowledge base. Deploys unified markdown skill primitives across Claude Code, Cursor, Windsurf, and Pi to execute automated document processing, multi-hop graph queries, structural link linting, and automated conversational history mining.
 - [OpenKB](https://github.com/VectifyAI/OpenKB) ([Website](https://pageindex.ai/)) - An open-source Python CLI knowledge base framework that compiles multi-format documents into interlinked markdown vaults using a specialized tree-based index for vectorless long-document retrieval.
 - [SenolIsci/mykg](https://github.com/SenolIsci/mykg) - An open-source neuro-symbolic knowledge graph extraction library that converts mixed-format document folders (`.pdf`, `.docx`, `.md`) into confidence-scored, ontology-grounded Obsidian vaults. Features a two-pass pipeline separating RDFS/OWL schema induction from instance extraction, built-in disk-state checkpoint recovery, and a deterministic code-based validation layer to completely eradicate link hallucination.
@@ -808,6 +796,28 @@ Inspired by a paradigm shift in software development engineering, this architect
   and Claude Code merges each episode into cross-episode concept pages with per-claim episode and speaker citations, a
   disagreements section, and lint and consolidation skills.
 - [Security KB (99helpers)](https://99helpers.com/wiki/security-kb) - A live cybersecurity knowledge wiki compiled from 11 industry security sources (MITRE ATT&CK, MITRE D3FEND, NIST CSF 2.0, CIS Controls v8). Features 33 interlinked topic summaries, deep dives, and entity pages alongside an interactive knowledge graph visualization and grounded Q&A search assistant.
+
+## Evaluations and Benchmarks
+
+*Evaluation frameworks, test harnesses, empirical bakeoffs, and comparative benchmarks for scoring and validating
+LLM Wiki and agent memory architectures.*
+
+- [Agentic Memory Index (Verging Labs)](https://verginglabs.com/) - An independent benchmark and comparative evaluation
+  suite testing 12 agent memory architectures (including Karpathy Wiki, GBrain, Cognee, and Mem0) across 56 working
+  sessions. Evaluates direct recall, cross-conversation synthesis, temporal reasoning, conflicting facts, and erasure,
+  measuring the accuracy, answer speed, and token cost trade-offs of compiled markdown vaults against vector memory.
+- [Evaluating OpenWiki with WikiBench (LangChain Blog)](https://www.langchain.com/blog/evaluating-openwiki-with-wikibench) - An
+  evaluation overview introducing WikiBench, a benchmark running inside the Harbor framework to measure wiki usefulness
+  for agents. Demonstrates that pairing a generated wiki with codebase access yields higher task correctness and lower
+  token costs than querying raw source code alone.
+- [memory-arena](https://pypi.org/project/memory-arena/) - An open-source benchmarking suite and evaluation harness
+  designed to test long-term agent memory strategies across interdependent, multi-session tasks. It establishes a
+  standardized empirical testing framework comparing classical vector storage, graph-based abstractions, and flat-file
+  architectures like the Karpathy LLM Wiki pattern—measuring recall accuracy, context degradation, and token overhead.
+- [The LLM Wiki Got a Spec Before It Got a Benchmark (Alden DoRosario)](https://adorosario.github.io/llm-wiki/) ([GitHub](https://github.com/adorosario/okf-model-bakeoff)) - An empirical benchmark
+  evaluating 14 LLMs generating Open Knowledge Format (OKF) markdown documents across a four-stage compilation loop.
+  Uses a cross-vendor judge and per-call cost ledgers to analyze price-performance plateaus, token efficiency, and
+  generator failure modes like empty-body artefacts and metadata schema crashes.
 
 ## Research and Papers
 
