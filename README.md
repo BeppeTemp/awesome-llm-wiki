@@ -405,6 +405,10 @@ Inspired by a paradigm shift in software development engineering, this architect
   featuring a human-in-the-loop review queue, OKF bundle import/export, a headless CLI (`ct`), and a local MCP server.
 - [DeepWiki-Open (Grok-Wiki)](https://github.com/AsyncFuncAI/deepwiki-open) ([Website](https://grok-wiki.com/)) - An open-source documentation engine and desktop client compiling codebases into
   interactive Markdown wikis, generating Mermaid diagrams and Q&amp;A indexes with local/remote LLM support.
+- [Eigma](https://eigma.app/) ([GitHub](https://github.com/eigma-app/eigma-mcp)) - A local-first personal wiki platform
+  and Model Context Protocol (MCP) connector for AI assistants (ChatGPT, Claude, Claude Code, Codex). Compiles
+  conversations into chaptered, interlinked Markdown pages paired with spaced-repetition quizzes, featuring a review
+  inbox for proposed changesets, interactive 3D galaxy visualization, and rich rendering (LaTeX, Mermaid).
 - [jp-lorenc1o/Eva-brain](https://github.com/jp-lorenc1o/Eva-brain) ([Website](https://jp-lorenc1o.github.io/Eva-brain/)) - A local-first macOS desktop client and MCP server for building and browsing personal markdown knowledge vaults.
 - [Kompl (tuirk)](https://github.com/tuirk/Kompl) - A self-hosted compounding LLM Wiki application and personal second brain. Uses a local NLP pipeline (spaCy, TF-IDF) paired with Gemini or DeepSeek to ingest web pages, PDFs, and YouTube transcripts, compiling them into an interlinked wiki with entity graph views, page history, and an MCP server.
 - [LLM Wiki (ddsyasas)](https://llmwiki.cc/) ([GitHub](https://github.com/ddsyasas/llm-wiki)) - An open-source,
