@@ -30,7 +30,9 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Libraries and Frameworks](#libraries-and-frameworks)
   - [Applications and Desktop Clients](#applications-and-desktop-clients)
   - [Editor Extensions and Plugins](#editor-extensions-and-plugins)
-  - [General-Purpose Wiki Compilers](#general-purpose-wiki-compilers)
+  - [CLI Compilers and Background Daemons](#cli-compilers-and-background-daemons)
+  - [Open Knowledge Format (OKF) Harnesses](#open-knowledge-format-okf-harnesses)
+  - [Vault-Centric Compilers and Local Managers](#vault-centric-compilers-and-local-managers)
   - [Codebase and Documentation Builders](#codebase-and-documentation-builders)
   - [Graph Compilation and Semantic Link Analyzers](#graph-compilation-and-semantic-link-analyzers)
   - [Ingestion and Synchronization Utilities](#ingestion-and-synchronization-utilities)
@@ -494,62 +496,35 @@ performance, schema rigor, and retrieval accuracy.*
   AI operating layer and Obsidian plugin that serves as a thinking partner. Reads vault notes, manages long-term
   memory, and coordinates local workflows using native tools, skills, and Model Context Protocol (MCP) integrations.
 
-### General-Purpose Wiki Compilers
+### CLI Compilers and Background Daemons
 
-*Command-line tools, daemons, and background scripts that compile and garden general personal knowledge bases and digital brains.*
+*Command-line compilation engines, background watcher daemons, cron processors, and automated pipelines that ingest
+raw documents and compile structured Markdown/JSONL wikis.*
 
 - [agent-wiki-cli](https://pypi.org/project/agent-wiki-cli/0.6.1/) - A CLI framework designed to build and maintain self-correcting flat-file markdown knowledge bases. Implements automated multi-format ingestion pipelines, two-pass semantic graph compiling, lint checking for broken linkages, and native slash-command hooks for AI terminal agents.
 - [AKBP (rohitg00)](https://github.com/rohitg00/akbp) - A Python CLI and JSONL tool server implementing the LLM Wiki pattern as a protocol surface for agent runtimes. Features schemas for request/response envelopes, local SQLite FTS5 search indexing, write safety gates (dry-runs, review approvals), portability manifests, and conformance tests to carry knowledge across sessions and agents.
 - [braindb (dimknaf)](https://github.com/dimknaf/braindb) - An open-source database engine and autonomous compiler implementing the LLM Wiki pattern on PostgreSQL and pgvector. Combines multi-query hybrid retrieval (trigrams, embeddings, 3-hop graph traversal, temporal decay) with background watcher and wiki scheduler sidecars that automatically extract typed entities and author living markdown pages, featuring dedicated Claude Code agent skills.
-- [browzy.ai](https://github.com/VihariKanukollu/browzy.ai) - An open-source, self-hosted TypeScript knowledge compiler designed to ingest messy digital data streams and compile them into a structured, self-organizing personal memory layer.
 - [CacheZero](https://github.com/swarajbachu/cachezero) - An automated second brain framework built directly around the Karpathy LLM Wiki pattern. It features a custom browser extension to capture web sources, an automated compilation engine that uses local LLMs to generate structured markdown vaults with explicit `[[wikilinks]]`, and an integrated MCP server for terminal agent querying.
 - [cobusgreyling/llm-wiki](https://github.com/cobusgreyling/llm-wiki) - A Python CLI and scaffolding template implementing Karpathy's LLM Wiki pattern with built-in MCP integration.
 - [digital-me-dream-cycle](https://pypi.org/project/digital-me-dream-cycle/) - An offline, LLM-powered knowledge distillation and maintenance compiler engineered to automate vault cleanup. Implements a background "sleep state" routine that scans local Markdown files and YAML metadata configurations to resolve cross-session information conflicts, distill fragmented daily logs into high-signal wiki nodes, and continuously repair broken links or semantic orphans.
-- [engram CLI (jeromeetienne)](https://github.com/jeromeetienne/engram) - A CLI utility for managing OKF wikis, providing validation, indexing, and link checking for Claude Code agents.
 - [ex-brain](https://www.npmjs.com/package/ex-brain) ([Companion Article](https://en.oceanbase.com/blog/knowledge-base-thinks-inspired-by-karpathy-llm-wiki)) - A personal knowledge base CLI and compiling tool inspired by Karpathy's LLM Wiki and Garry Tan's GBrain. Instead of simply appending text, it uses LLMs to digest incoming notes into an updated 'current state' (archiving old context), extracting timelines and linking entities automatically. Leverages [seekdb](https://github.com/oceanbase/seekdb) (OceanBase's AI-native database) to execute hybrid vector-semantic and BM25 full-text search queries.
 - [GBrain](https://github.com/garrytan/gbrain) - An open-source, markdown-first AI agent memory layer and knowledge graph compiler. It processes raw document directories, transcripts, and data captures into structured plain-text nodes, using zero-LLM entity extraction to map typed connection edges and an automated background "dream cycle" to handle profile enrichment, gap analysis, and citation repair across local agent frameworks.
-- [jackwu321/Quant_LLM_Wiki](https://github.com/jackwu321/Quant_LLM_Wiki) ([PyPI](https://pypi.org/project/quant-llm-wiki/)) - A specialized implementation of the Karpathy LLM Wiki pattern engineered specifically for quantitative finance research. Features multi-source ingestion of trading PDFs, web links, and financial articles into a local Markdown vault using strict domain-specific metadata schemas, inline LaTeX mathematical formatting, and a dedicated "Rethink Layer" for continuous strategy auditing, validation tracking, and post-mortem charting.
 - [Kenjaku (tpierrain)](https://github.com/tpierrain/kenjaku) - An open-source, local-first second brain and Karpathy LLM Wiki engine. Combines Git-backed, Obsidian-compatible Markdown vaults with automated multi-source ingestion (Slack, Gmail, Drive), background wiki-health maintenance (`/lint`, `/consolidate`, `/file-back`), and pluggable on-device embedding search.
 - [Klore](https://github.com/vbarsoum1/llm-wiki-compiler) - A Python-based CLI knowledge compiler that structures multi-source research inputs into markdown files, featuring native configuration rule injectors for Cursor, Windsurf, and Copilot, alongside a dedicated Claude Code slash-command plugin.
 - [knowledge-worker](https://github.com/rahulmranga/knowledge-worker) - A local-first, Python-based memory compiler designed to preserve context across separate agent sessions without database sprawl. It stores highly structured knowledge graphs inside portable, flat JSON files, utilizing a mandatory human-in-the-loop review gate and strict document-level excerpt provenance to eliminate hallucinated entity extraction and long-term memory drift.
 - [Lexicon](https://github.com/jared-goering/lexicon) - An LLM-compiled knowledge base that ingests
-  raw data into SQLite, compiling structured Markdown articles with backlinks, auto-generated wikilinks, and manual edit preservation.
+  raw data into SQLite, compiling structured Markdown articles with backlinks, auto-generated wikilinks, and manual
+  edit preservation.
 - [LLM Wiki (nvk)](https://github.com/nvk/llm-wiki) - An open-source core engine and CLI toolkit implementing whole-topic archive lifecycle management, deep workspace linting with structural auto-repair capabilities, and platform-specific path environment diagnostics.
 - [LLM Wiki Compiler (ussumant)](https://github.com/ussumant/llm-wiki-compiler) - A Claude Code and Codex-compatible plugin and CLI tool that compiles scattered Markdown files or entire repositories into local/global wikis, featuring codebase-mode auto-detection, a shared session context helper, and an interactive canvas-based knowledge graph.
-- [LLM Wiki Newsroom (alfadur7)](https://github.com/alfadur7/llm-wiki-newsroom) ([Website](https://alfadur7.github.io/llm-wiki-newsroom/)) - A multi-agent, local-first knowledge base framework implementing Karpathy's LLM Wiki pattern as a five-role newsroom. Features separated authoring and review gates, an interactive D3 knowledge graph, cascading note updates, and a self-improving meta-loop where recurrent mistakes refine the system's own authoring rules.
-- [LLM Wikid](https://github.com/shannhk/llm-wikid) - A multi-phase shell compilation framework for Obsidian vaults that implements automatic inbound media extraction, programmatic categorization routing, and mandatory cognitive bias countermeasure modules.
 - [llm_wiki_rag_pipeline (plaban1981)](https://github.com/plaban1981/llm_wiki_rag_pipeline) - A Python-based CLI knowledge compiler and retrieval pipeline that implements the Karpathy LLM Wiki pattern. Scaffolds local directories, ingests raw sources into interlinked Markdown files with structured YAML front matter, constructs a local cosine similarity search index via MiniLM embeddings, and runs questions through a streaming Q&A pipeline and structural validator.
-- [llm-wiki (dotdrelle)](https://github.com/dotdrelle/llm-wiki) - A local-first Markdown knowledge engine and CLI
-  implementing the Karpathy LLM Wiki pattern and Google Open Knowledge Format (OKF). Ingests raw sources into
-  structured concept pages with strict extraction contracts, featuring LanceDB vector indexing, deliverable
-  compilation from templates, citation graph querying via MCP, and an agent-proposals review queue.
-- [llm-wiki (hellohejinyu)](https://github.com/hellohejinyu/llm-wiki) ([npm](https://www.npmjs.com/package/llm-wiki)) - A Node.js-based CLI personal wiki manager. Scaffolds directories into a structured Markdown wiki, processes raw files into interlinked pages using LLM patches, runs questions through a multi-step ReAct agent, and performs static and semantic linting checks (orphans, dead links, contradictions) with automated stub creation.
-- [LLM-Wiki (NiharShrotri)](https://github.com/NiharShrotri/llm-wiki) - A Python-based CLI knowledge compiler and local web server implementing the Karpathy LLM Wiki pattern on Ollama (Qwen3-14B). Features automated structure ingestion, hybrid text retrieval (BM25 + vectors + reranking via QMD), a streaming Web UI chat interface, and a D3 force-directed knowledge graph visualization.
 - [llm-wiki-compiler (Atomic Memory)](https://github.com/atomicmemory/llm-wiki-compiler) - A TypeScript CLI tool and MCP server that compiles raw text into structured markdown wikis, featuring paragraph-level source provenance tracking, multi-provider model routing, and a rule-based workspace linter.
-- [llm-wiki-starter (eleven-net-cn)](https://github.com/eleven-net-cn/llm-wiki-starter) - A one-command CLI scaffolding
-  tool and agent skill implementing the Karpathy LLM Wiki pattern. Generates a three-layer directory structure
-  (raw/, wiki/, templates/), pre-configures AGENTS.md and CLAUDE.md guidelines, auto-configures 17 essential Obsidian
-  plugins and themes, and installs companion agent skills.
-- [llmwiki (Lucas Astorian)](https://github.com/lucasastorian/llmwiki) - An open-source Python engine and local web dashboard that indexes directories into a local SQLite repository, serving a specialized MCP adapter to automate Claude-driven wiki compilation and citation tracking.
 - [memwiki (hereisSwapnil)](https://github.com/hereisSwapnil/memwiki) ([npm](https://www.npmjs.com/package/memwiki)) - A
   zero-dependency CLI scaffolding tool and persistent project memory protocol for AI agents (Claude Code, Cursor,
   Copilot). Initializes a structured .memory/ directory with raw storage, a hot context cache (hot.md), append-only
   changelogs (log.md), architecture decision records, and multi-agent root hooks.
 - [my-wiki](https://pypi.org/project/my-wiki/) - A local-first, Git-synced repository management utility for terminal AI workflows. It enforces a strict, predictable `wiki/` flat-file directory contract on the local filesystem, optimizing how external tools like Claude Code and Cursor discover, parse, and commit markdown knowledge files without database overhead or proprietary lock-in.
-- [obsidian-llm-wiki-local (kytmanov)](https://github.com/kytmanov/obsidian-llm-wiki-local) - An open-source, 100% local
-  CLI compiler (succeeded by Synto) that parses Markdown notes using Ollama to extract entities and automatically
-  compile interlinked Obsidian concept wikis.
-- [Oh My Wiki](https://pypi.org/project/oh-my-wiki/) - A local-first Python package and CLI utility implementing an interactive management layer for Karpathy-style markdown vaults. It pairs a multi-vault SQLite registry with an interactive Socratic terminal wizard that prompts users to evaluate, refine, or reject agentic knowledge extractions before they are written to disk, preventing unstructured data corruption.
-- [OKF Harness (pumblus)](https://github.com/pumblus/okf-harness) ([Website](https://okf-harness.dev/)) - An
-  agent-first, local-first, terminal-native harness for maintaining OKF-compatible LLM Wikis. Registers raw sources
-  under `raw/sources/`, produces ingest plans, and compiles synthesized Markdown pages under `wiki/` with byte-level
-  citation verification, exposing deterministic commands (`okfh evidence`, `okfh check`, `okfh graph`) to agents
-  alongside self-contained local HTML graph reports.
-- [Open Knowledge CLI](https://github.com/openknowledge-sh/openknowledge) ([Website](https://openknowledge.sh)) - An open-source CLI, daemon, and isolated Docker runtime
-  implementing the OKF v0.1 spec for self-maintaining repositories.
 - [Patina](https://github.com/soyrochus/patina) ([Deep Dive](https://www.linkedin.com/pulse/patina-turning-karpathys-llm-wiki-pattern-rust-cli-van-der-kleijn-hjm4e/)) - A high-performance, single-binary Rust CLI tool explicitly designed around the Karpathy LLM Wiki pattern. It utilizes memory-mapped reads to parse local markdown directories and extract frontmatter metadata, compiling deterministic in-memory connection graphs with zero heavy database sidecars.
-- [quarry-kb](https://pypi.org/project/quarry-kb/) - A configuration-driven knowledge-ingestion harness and compilation tool for Python environments. It enforces rigid structural contracts when translating raw, unstructured documents into organized flat-file notebooks, utilizing declarative schema files to programmatically handle directory sorting, standardize YAML frontmatter metadata layout, and map explicit cross-note link pathways.
-- [quicky-wiki (anzal1)](https://github.com/anzal1/quicky-wiki) - A Node.js-based CLI and dashboard server that compiles document vaults into confidence-scored, self-maintaining LLM wikis. Automatically extracts facts, detects contradictions, structures timelines, and serves an interactive D3 force-directed knowledge graph and Ask Wiki chat interface.
 - [scribe (oliver-kriska)](https://getscribe.dev/) ([GitHub](https://github.com/oliver-kriska/scribe)) - A single-binary
   Go CLI and daemon that compiles Git repos, coding agent sessions (Claude Code, Codex), and notes into a Markdown
   wiki. Features two-pass ingestion into `raw/` and `wiki/` directories, rolling hot context, automated cron-driven
@@ -558,8 +533,49 @@ performance, schema rigor, and retrieval accuracy.*
   knowledge compiler implementing Karpathy's LLM Wiki pattern to prevent indirect prompt injection and source
   poisoning. Features a 7-stage pipeline with input sanitization, nonce-delimited extraction, URI trust tiering,
   dual-model adversarial reviews, and quarantined write-gates.
-- [serradura/okf-gem](https://github.com/serradura/okf-gem) ([Website](https://okfgem.com/)) - The complete CLI, library, and graph server harness for creating, maintaining, and visualizing OKF bundles.
 - [suwonleee/llmwiki](https://github.com/suwonleee/llmwiki) - A local-first compounding engineering logbook and topic compiler featuring automatic capture and memory quizzes.
+
+### Open Knowledge Format (OKF) Harnesses
+
+*CLI tools, generation pipelines, and execution harnesses built specifically to compile, maintain, and validate
+Google Open Knowledge Format (OKF) bundles.*
+
+- [engram CLI (jeromeetienne)](https://github.com/jeromeetienne/engram) - A CLI utility for managing OKF wikis, providing validation, indexing, and link checking for Claude Code agents.
+- [llm-wiki (dotdrelle)](https://github.com/dotdrelle/llm-wiki) - A local-first Markdown knowledge engine and CLI
+  implementing the Karpathy LLM Wiki pattern and Google Open Knowledge Format (OKF). Ingests raw sources into
+  structured concept pages with strict extraction contracts, featuring LanceDB vector indexing, deliverable
+  compilation from templates, citation graph querying via MCP, and an agent-proposals review queue.
+- [OKF Harness (pumblus)](https://github.com/pumblus/okf-harness) ([Website](https://okf-harness.dev/)) - An
+  agent-first, local-first, terminal-native harness for maintaining OKF-compatible LLM Wikis. Registers raw sources
+  under `raw/sources/`, produces ingest plans, and compiles synthesized Markdown pages under `wiki/` with byte-level
+  citation verification, exposing deterministic commands (`okfh evidence`, `okfh check`, `okfh graph`) to agents
+  alongside self-contained local HTML graph reports.
+- [Open Knowledge CLI](https://github.com/openknowledge-sh/openknowledge) ([Website](https://openknowledge.sh)) - An open-source CLI, daemon, and isolated Docker runtime
+  implementing the OKF v0.1 spec for self-maintaining repositories.
+- [quarry-kb](https://pypi.org/project/quarry-kb/) - A configuration-driven knowledge-ingestion harness and compilation tool for Python environments. It enforces rigid structural contracts when translating raw, unstructured documents into organized flat-file notebooks, utilizing declarative schema files to programmatically handle directory sorting, standardize YAML frontmatter metadata layout, and map explicit cross-note link pathways.
+- [serradura/okf-gem](https://github.com/serradura/okf-gem) ([Website](https://okfgem.com/)) - The complete CLI, library, and graph server harness for creating, maintaining, and visualizing OKF bundles.
+
+### Vault-Centric Compilers and Local Managers
+
+*Compilers and management layers tailored specifically for personal markdown vaults (Obsidian, Logseq, MkDocs),
+featuring interactive terminal review wizards, visual graphs, and vault curation engines.*
+
+- [browzy.ai](https://github.com/VihariKanukollu/browzy.ai) - An open-source, self-hosted TypeScript knowledge compiler designed to ingest messy digital data streams and compile them into a structured, self-organizing personal memory layer.
+- [jackwu321/Quant_LLM_Wiki](https://github.com/jackwu321/Quant_LLM_Wiki) ([PyPI](https://pypi.org/project/quant-llm-wiki/)) - A specialized implementation of the Karpathy LLM Wiki pattern engineered specifically for quantitative finance research. Features multi-source ingestion of trading PDFs, web links, and financial articles into a local Markdown vault using strict domain-specific metadata schemas, inline LaTeX mathematical formatting, and a dedicated "Rethink Layer" for continuous strategy auditing, validation tracking, and post-mortem charting.
+- [LLM Wiki Newsroom (alfadur7)](https://github.com/alfadur7/llm-wiki-newsroom) ([Website](https://alfadur7.github.io/llm-wiki-newsroom/)) - A multi-agent, local-first knowledge base framework implementing Karpathy's LLM Wiki pattern as a five-role newsroom. Features separated authoring and review gates, an interactive D3 knowledge graph, cascading note updates, and a self-improving meta-loop where recurrent mistakes refine the system's own authoring rules.
+- [LLM Wikid](https://github.com/shannhk/llm-wikid) - A multi-phase shell compilation framework for Obsidian vaults that implements automatic inbound media extraction, programmatic categorization routing, and mandatory cognitive bias countermeasure modules.
+- [llm-wiki (hellohejinyu)](https://github.com/hellohejinyu/llm-wiki) ([npm](https://www.npmjs.com/package/llm-wiki)) - A Node.js-based CLI personal wiki manager. Scaffolds directories into a structured Markdown wiki, processes raw files into interlinked pages using LLM patches, runs questions through a multi-step ReAct agent, and performs static and semantic linting checks (orphans, dead links, contradictions) with automated stub creation.
+- [LLM-Wiki (NiharShrotri)](https://github.com/NiharShrotri/llm-wiki) - A Python-based CLI knowledge compiler and local web server implementing the Karpathy LLM Wiki pattern on Ollama (Qwen3-14B). Features automated structure ingestion, hybrid text retrieval (BM25 + vectors + reranking via QMD), a streaming Web UI chat interface, and a D3 force-directed knowledge graph visualization.
+- [llm-wiki-starter (eleven-net-cn)](https://github.com/eleven-net-cn/llm-wiki-starter) - A one-command CLI scaffolding
+  tool and agent skill implementing the Karpathy LLM Wiki pattern. Generates a three-layer directory structure
+  (raw/, wiki/, templates/), pre-configures AGENTS.md and CLAUDE.md guidelines, auto-configures 17 essential Obsidian
+  plugins and themes, and installs companion agent skills.
+- [llmwiki (Lucas Astorian)](https://github.com/lucasastorian/llmwiki) - An open-source Python engine and local web dashboard that indexes directories into a local SQLite repository, serving a specialized MCP adapter to automate Claude-driven wiki compilation and citation tracking.
+- [obsidian-llm-wiki-local (kytmanov)](https://github.com/kytmanov/obsidian-llm-wiki-local) - An open-source, 100% local
+  CLI compiler (succeeded by Synto) that parses Markdown notes using Ollama to extract entities and automatically
+  compile interlinked Obsidian concept wikis.
+- [Oh My Wiki](https://pypi.org/project/oh-my-wiki/) - A local-first Python package and CLI utility implementing an interactive management layer for Karpathy-style markdown vaults. It pairs a multi-vault SQLite registry with an interactive Socratic terminal wizard that prompts users to evaluate, refine, or reject agentic knowledge extractions before they are written to disk, preventing unstructured data corruption.
+- [quicky-wiki (anzal1)](https://github.com/anzal1/quicky-wiki) - A Node.js-based CLI and dashboard server that compiles document vaults into confidence-scored, self-maintaining LLM wikis. Automatically extracts facts, detects contradictions, structures timelines, and serves an interactive D3 force-directed knowledge graph and Ask Wiki chat interface.
 - [Tome (chicken-noodle-chris)](https://github.com/chicken-noodle-chris/tome) - A Claude Code plugin and CLI utility that enforces vault directory contracts, runs linting, and serves Quartz views.
 - [vault-curator](https://github.com/ClaudioDrews/vault-curator) - A local, Python-based knowledge system compiler that transforms massive Markdown vaults into self-organizing environments for AI agents. It processes flat-file directories to automatically inject structural frontmatter metadata, compute semantic connection links, and compile persistent Maps of Content (MOCs) to optimize downstream agent retrieval.
 
