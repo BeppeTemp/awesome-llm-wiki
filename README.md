@@ -26,6 +26,8 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Comparative Audits and Architecture Trials](#comparative-audits-and-architecture-trials)
 - [Books and Ebooks](#books-and-ebooks)
 - [Specifications and Standards](#specifications-and-standards)
+  - [Open Knowledge Format (OKF)](#open-knowledge-format-okf)
+  - [Yet Another Notes Project (YANP)](#yet-another-notes-project-yanp)
 - [Tools and Plugins](#tools-and-plugins)
   - [Libraries and Frameworks](#libraries-and-frameworks)
   - [Desktop Applications and Local Workbenches](#desktop-applications-and-local-workbenches)
@@ -371,6 +373,12 @@ performance, schema rigor, and retrieval accuracy.*
 - [How the Open Knowledge Format Can Improve Data Sharing (Google Cloud Blog)](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/) - The official announcement and contextual release brief introducing OKF v0.1. Outlines the industry-wide problem of fragmented AI context landscapes and formalizes the Karpathy LLM-wiki pattern into an enterprise-accepted format for decoupling knowledge generation from proprietary database frameworks.
 - [Open Knowledge Format (OKF) Specification (Version 0.2)](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) - The official technical blueprint by Google Cloud defining an open, vendor-neutral standard for human- and agent-friendly knowledge bundles. Outlines the exact structural contracts for a file-based layout: directories of raw Markdown documents, YAML frontmatter configurations (featuring provenance, trust status, and lifecycle tags), standard horizontally linked graphs, and attested computations.
 - [Open Knowledge format v0.2 tackles agentic trust (Google Cloud Blog)](https://cloud.google.com/blog/products/data-analytics/okf-v0-2-adds-trust-signals) - The official announcement and release brief introducing OKF v0.2. Focuses on the addition of queryable frontmatter metadata properties (such as source credentials, provenance, and trust ratings) and attested computations to enable automated verification of agent-managed knowledge.
+
+### Yet Another Notes Project (YANP)
+
+- [YANP Vault Specification (spinchange)](https://spinchange.com/yanp/) - A formal specification for plain-text,
+  tool-agnostic knowledge vaults, defining YAML frontmatter schemas for human and agent co-authors, deterministic
+  wikilink resolution, and publish transforms.
 
 ## Tools and Plugins
 
