@@ -240,6 +240,11 @@ Inspired by a paradigm shift in software development engineering, this architect
   approval workflows, audit trails, pinned overrides that survive rebuilds, and multi-audience wiki compilation.
 - [The LLM Wiki at Scale: From Personal Research Tool to Production RAG (Michal Nasternak on Medium)](https://michalnasternak.medium.com/the-llm-wiki-at-scale-from-personal-research-tool-to-production-rag-247710a1284c) - An architectural analysis examining how to scale the LLM Wiki pattern to enterprise production. Details the bottlenecks of single index files once vaults grow past hundreds of pages, proposing session-level on-demand wiki compilation and per-user persistent knowledge layers to optimize synthesis quality, cost efficiency, and debuggability over traditional vector RAG.
 - [The Missing Data Layer in LLM Knowledge Bases (Claudiu Dascalescu on Xata Blog)](https://xata.io/blog/llm-knowledge-bases) - An architectural primer proposing a dual-layer structure that pairs PostgreSQL (for transactional data/metrics) with a Markdown wiki (for qualitative context), detailing saved SQL queries, database branching, and agent skill configurations.
+- [What Is a Company Brain? A Full Guide for 2026 (Slite)](https://slite.com/learn/company-brain) - An
+  architectural guide by Christophe Pasquier tracing the evolution of company brains from personal second brains,
+  enterprise search, and Karpathy's LLM wiki pattern to multi-agent organizational context layers. Contrasts personal
+  memory vaults against company brains across access permissions, conflicting source resolution, and automated
+  maintenance, providing an operational decision framework for teams deploying autonomous agents.
 - [What Karpathy's LLM Wiki is Missing (And How to Fix It)](https://dev.to/penfieldlabs/what-karpathys-llm-wiki-is-missing-and-how-to-fix-it-1988) (Penfield Labs) - A deep architectural critique outlining solutions for token scaling limits in file-based context stores, featuring code patterns for semantic deduplication and pre-commit syntax hooks to protect structural integrity.
 
 ### Tutorials and Setup Guides
