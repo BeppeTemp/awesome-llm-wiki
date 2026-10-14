@@ -369,6 +369,10 @@ performance, schema rigor, and retrieval accuracy.*
 - [Karpathy's LLM Wiki: How to Keep It From Becoming Legacy (Felipe Fontoura)](https://felipefontoura.com/articles/llm-wiki/) - A
   practitioner build of an LLM wiki, with four maintenance rules, two zero-token drift checks, and an audit of the
   author's own vault.
+- [LLM Wiki on GitHub: Karpathy's Gist and 12 Repos Compared (Dexio)](https://dexio.wiki/guides/llm-wiki-github/) - An
+  empirical comparative review and audit examining 12 open-source implementations of Karpathy's LLM Wiki pattern across
+  desktop applications, Obsidian plugins, agent skills, and compilers. Evaluates interfaces, model providers, and
+  offline capabilities alongside an empirical study of 46 public LLM wikis on GitHub.
 - [Teaching an AI to Remember: What I Learned Building a Wiki LLM (Ido Efrati on Cornell AI Innovation Hub)](https://innovationhub.ai.cornell.edu/articles/teaching-an-ai-to-remember-what-i-learned-building-a-wiki-llm/) - A
   case study evaluating Karpathy's three-layer LLM Wiki architecture (sources, wiki, schema) against traditional RAG.
   Stress-tests chapter-by-chapter ingestion and contradiction reconciliation on *The Hound of the Baskervilles*,
