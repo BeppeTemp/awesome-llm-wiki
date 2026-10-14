@@ -33,6 +33,7 @@ Inspired by a paradigm shift in software development engineering, this architect
   - [Desktop Applications and Local Workbenches](#desktop-applications-and-local-workbenches)
   - [Web Applications and Collaborative Workspaces](#web-applications-and-collaborative-workspaces)
   - [Multi-Workspace Cockpits and Agent Platforms](#multi-workspace-cockpits-and-agent-platforms)
+  - [Personal Knowledge Operating Systems and Life Assistants](#personal-knowledge-operating-systems-and-life-assistants)
   - [Editor Extensions and Plugins](#editor-extensions-and-plugins)
   - [CLI Compilers and Background Daemons](#cli-compilers-and-background-daemons)
   - [Open Knowledge Format (OKF) Harnesses](#open-knowledge-format-okf-harnesses)
@@ -468,7 +469,6 @@ graph platforms.*
 - [Silica (kiycoh)](https://silica-agent.vercel.app/) ([GitHub](https://github.com/kiycoh/silica-agent)) - A local-first transactional agent and web GUI workbench for Karpathy-style LLM Wikis and Google's Open Knowledge Format (OKF v0.2). Implements an FSM write path with post-write verification gates and rollback mechanisms, atomic graph-safe link redirects, zero-trust ingress staging, and published abstention benchmarks on LoCoMo.
 - [Sofie Wiki](https://sofie.wiki/) - A chat-driven AI knowledge base application that automatically writes, cross-links, and updates wiki pages from conversations, featuring local history and Model Context Protocol (MCP) integration.
 - [talirezun/the-curator](https://github.com/talirezun/the-curator) ([Companion Article](https://medium.com/@talirezun/the-second-brain-that-grows-smarter-and-lives-on-your-computer-59dd45031db4)) - A full-stack, locally-hosted knowledge curation application that automates the Karpathy LLM Wiki pattern via an accessible browser GUI. Features an automated Atomic Decomposition pipeline separating files into interconnected Entity, Concept, and Summary nodes, built-in Obsidian graph visualization setups, and an integrated private Model Context Protocol (MCP) server bridge to expose local vaults directly to external AI clients.
-- [whoami.wiki](https://whoami.wiki/) ([GitHub](https://github.com/whoami-wiki/whoami)) - An open-source, private life-archiving system that converts digital data dumps (photo vaults, chat logs, bank transactions, and location histories) into a local personal encyclopedia. Uses autonomous agent pipelines to cross-reference unrelated metadata timelines into highly detailed, interlinked markdown pages complete with standard Wikipedia-style information sidebars, event logs, and relationship networks.
 - [WikiMind (Jayashan Manodya)](https://wikimind-lac.vercel.app/) ([GitHub](https://github.com/JayashanManodya/WikiMind)) - A full-stack, AI-powered knowledge management system inspired by the LLM Wiki pattern. Converts unstructured documents into an interlinked, Wikipedia-style knowledge base featuring a 2D physics-based interactive knowledge graph, a stateful LangGraph ingestion pipeline, LangSmith validation, a zero-hallucination grounded QA assistant with click-through citations, and cross-device Turso Cloud database connectivity.
 - [WikiMind (Manav Gupta)](https://wikimind.fly.dev/) ([GitHub](https://github.com/manavgup/wikimind)) ([Companion Article](https://manavgup.github.io/shipai/blog/2026/04/21/building-wikimind-personal-knowledge-os/)) - An open-source personal knowledge OS that ingests PDFs, web articles, podcasts, and video transcripts into a structured, interlinked wiki database. Features automated claim extraction, multi-provider LLM routing, and a lightweight `docling-serve` sidecar architecture.
 - [XTrace MemHub](https://mem.xtrace.ai) ([GitHub](https://github.com/XTraceAI/memhub-llm-wiki-guide)) ([Chrome Web Store](https://chromewebstore.google.com/detail/xtrace-sync-ai-memories/bmfpjofdjjelhnjokoolehikpaaohapj)) - A web application, context control panel, and browser extension that turns chat histories from ChatGPT, Claude, and Gemini into an interactive LLM Wiki mindmap. Extracts memories into an encrypted database and exports structured, interlinked Markdown vaults ready for Obsidian navigation with zero local CLI setup.
@@ -492,6 +492,25 @@ environments and access controls.*
   SQLite database backend per wiki, hybrid semantic search, live CRDT-based text sync, and a Model Context Protocol
   (MCP) server that lets agents work in the same active document.
 - [WeKnora](https://weknora.weixin.qq.com/) ([GitHub](https://github.com/Tencent/WeKnora)) - An open-source, self-hostable agentic knowledge platform. Features a dedicated 'Wiki Mode' where agents autonomously compile and update interlinked Markdown pages with visual graph views, alongside a multi-workspace RBAC dialog center, a CLI utility, and an official Model Context Protocol (MCP) server integration.
+
+### Personal Knowledge Operating Systems and Life Assistants
+
+*Autonomous personal life assistants, agent-driven memory operating systems, and multi-stream personal knowledge graphs
+that compile multi-domain life data (health, finance, calendar, documents) into compounding, agent-maintained wikis.*
+
+- [Memory OS](https://github.com/ClaudioDrews/memory-os) - A 7-layer local memory operating system built for Hermes
+  Agent. It unifies trust-scored SQLite facts, session histories, and local vector retrieval with an automated,
+  self-curating LLM Wiki pipeline that compiles system insights directly into flat markdown notes, allowing users to
+  manually audit and edit their agent's long-term memory structures using desktop markdown editors like Obsidian.
+- [SelfBrain (WAVEPILLARS)](https://github.com/selfbrain/selfbrain) ([Website](https://wavepillars.com/builds/selfbrain/)) - An
+  open-source personal life AI assistant and knowledge operating system for Cursor and Obsidian. Connects 11 personal
+  data hubs to a CORE assistant with companion Python routines for frontmatter search, health telemetry analysis,
+  index pruning, and wiki maintenance.
+- [whoami.wiki](https://whoami.wiki/) ([GitHub](https://github.com/whoami-wiki/whoami)) - An open-source, private
+  life-archiving system that converts digital data dumps (photo vaults, chat logs, bank transactions, and location
+  histories) into a local personal encyclopedia. Uses autonomous agent pipelines to cross-reference unrelated
+  metadata timelines into highly detailed, interlinked markdown pages complete with standard Wikipedia-style
+  information sidebars, event logs, and relationship networks.
 
 ### Editor Extensions and Plugins
 
@@ -770,7 +789,6 @@ featuring interactive terminal review wizards, visual graphs, and vault curation
   Python health linter for broken links, leaked secrets, and fact-check queues.
 - [llm-wiki-skills (vanillaflava)](https://github.com/vanillaflava/llm-wiki-skills) - An open-source agent skill suite conforming to the agent-skills standard. Features a crystallize operation to compile active chat sessions back to the vault, automated source confidence tagging, and a template-driven system for scaffolding structured markdown nodes across Obsidian and Logseq.
 - [MehmetGoekce/llm-wiki](https://github.com/MehmetGoekce/llm-wiki) ([Companion Article](https://mehmetgoekce.substack.com/p/i-built-an-l1l2-cache-for-my-ai-coding)) - A production-grade implementation of the Karpathy LLM Wiki pattern for Claude Code with out-of-the-box support for Logseq and Obsidian. Implements a dual-layer hardware cache model that splits knowledge into hot system memory (L1 via CLAUDE.md) and an on-demand on-disk filesystem (L2), complete with automated shell ingestion, multi-stage search routing, an index eviction engine, and a 11-rule automated semantic linter.
-- [Memory OS](https://github.com/ClaudioDrews/memory-os) - A 7-layer local memory operating system built for Hermes Agent. It unifies trust-scored SQLite facts, session histories, and local vector retrieval with an automated, self-curating LLM Wiki pipeline that compiles system insights directly into flat markdown notes, allowing users to manually audit and edit their agent's long-term memory structures using desktop markdown editors like Obsidian.
 - [NousResearch/hermes-agent (Research Wiki Skill)](https://hermes-agent.nousresearch.com/docs/user-guide/skills/bundled/research/research-llm-wiki) - A first-party, natively bundled system skill that brings the Karpathy LLM Wiki pattern to the Hermes Agent ecosystem. Features batched parallel ingestion, strict bi-directional `[[wikilink]]` creation rules, automatic file size splitting thresholds, and explicit contradiction handling protocols that isolate conflicting claims for human review while maintaining out-of-the-box compatibility with Obsidian and Logseq vaults.
 - [Obsidian Second Brain](https://github.com/eugeniughelbur/obsidian-second-brain) - A powerful cross-CLI skill suite for Claude Code, Codex, and Gemini that updates, reconciles, and rewrites existing vault notes dynamically to enforce a compounding local knowledge graph, featuring 34 terminal commands and write-time document validation.
 - [owledge](https://github.com/elmokirk/owledge) - An open-source automation framework and behavioral runtime configuration package for agent frameworks. It enforces structured memory execution boundaries through system lifecycle hooks, utilizing strict namespace profiling and context-lane mappings to ensure independent multi-agent daemons read, write, and cross-link flat markdown concept nodes without creating directory collisions or unstructured data drift.
