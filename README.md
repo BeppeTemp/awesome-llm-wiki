@@ -373,6 +373,11 @@ performance, schema rigor, and retrieval accuracy.*
   self-hosted patterns (Claude Code, GBrain, Sylph), memory SDKs (mem0, Zep, Letta), vertical setups (Pletor,
   Gorgias Cortex), and dedicated platforms (Carrara, Slite Agent). Evaluates signals, storage shapes, maintenance
   loops, and query interfaces against empirical survey findings from 149 teams.
+- [Hybrid RAG vs LLM-Wiki: 13-Question A/B Evaluation (Kevin Wu)](https://osisdie.github.io/blog/2026/hybrid-vs-llm-wiki-eval/) - An
+  empirical comparative audit benchmarking Karpathy's LLM Wiki against Hybrid RAG (BM25 + dense + RRF) across a
+  60-document knowledge base. Highlights scorecard metrics (13/13 vs. 12/13 accuracy, 9.3× token overhead, 2.5× p50
+  latency) and diagnoses three critical LLM Wiki failure modes: cross-tenant contamination, baked-in page synthesis
+  noise, and paraphrase over-simplification.
 - [I Built Karpathy's LLM Wiki Twice — Once as Code, Once as a .md (Leandro Bernardo on Towards AI)](https://pub.towardsai.net/i-built-karpathys-llm-wiki-twice-once-as-code-once-as-a-md-heres-what-each-one-gives-up-08b31170999a) ([GitHub](https://github.com/LeoBR84p/wiki_llm)) - A comparative case study outlining the tradeoffs between a programmatic pipeline (predictability, typed contracts, token budgets) and an agentic instruction-based Markdown setup.
 - [I Built Two AI Second Brains From the Same Documents (Deepak Singh on Medium)](https://medium.com/@dksingh0429/built-two-ai-second-brains-with-the-same-documents-one-gave-better-answers-heres-why-6e96483935a8) - A comparative empirical case study examining the impact of knowledge organization on Claude Code reasoning. Compares a rigidly structured Obsidian vault (strict SCHEMA.md, YAML metadata) against a minimally structured one, demonstrating how over-structuring can lead to confidently incorrect answers when data is missing and outlining a progressive structuring threshold at ~300 notes.
 - [I Tested 5 'LLM Wiki' Implementations So You Don't Have To (Mike Written)](https://medium.com/@aitrends24/i-tested-5-llm-wiki-implementations-so-you-don-t-have-to-d68ba7cc9100) - A comparative review of five open-source LLM Wiki implementations, focusing on automation and workflow integration.
